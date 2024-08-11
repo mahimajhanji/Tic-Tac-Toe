@@ -1,0 +1,83 @@
+body {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000000;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.board {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgb(1, 7, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.cell:hover {
+    background: #4c49d2;
+}
+
+button {
+    height: 60px;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: rgb(1, 7, 49);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4c49d2;
+    background: rgba( 0, 17, 98, 0.35 );
+    background: rgba(187, 193, 206, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#message {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    margin-top: 20px;
+    font-size: 7rem;
+    color: white;
+}
